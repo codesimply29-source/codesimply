@@ -12,32 +12,28 @@ const paymentRoutes = require("./routes/paymentRoutes");
 
 const app = express();
 
+// الاتصال بقاعدة البيانات
 connectDB();
 
+// Middlewares
 app.use(cors());
 app.use(express.json());
-app.use("/uploads", express.static("uploads"));
 
-// عرض مجلد الصور المرفوعة
-app.use("/uploads", express.static("uploads"));
-
-app.use("/api/auth", authRoutes);
-
-
-// عرض مجلد uploads
+// عرض الصور المرفوعة
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-// عرض ملفات الموقع
+// ملفات الموقع
 app.use(express.static(path.join(__dirname, "../client")));
 app.use(express.static(path.join(__dirname, "..")));
 
-// Routes
+// API Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/courses", courseRoutes);
 app.use("/api/payments", paymentRoutes);
 
+// تشغيل السيرفر
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-    console.log(`Server Running On Port ${PORT}`);
+    console.log(`✅ Server Running On Port ${PORT}`);
 });
