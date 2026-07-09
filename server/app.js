@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, "..")));
 // API Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/courses", courseRoutes);
-app.use("/api/payments", paymentRoutes);
+app.use("/api/payments", PaymentRoutes);
 
 // تشغيل السيرفر
 const PORT = process.env.PORT || 5000;
