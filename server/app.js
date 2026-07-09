@@ -25,7 +25,9 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 // ملفات الموقع
 app.use(express.static(path.join(__dirname, "../client")));
 app.use(express.static(path.join(__dirname, "..")));
-
+app.get("/test", (req, res) => {
+    res.send("OK");
+});
 // API Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/courses", courseRoutes);
