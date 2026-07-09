@@ -8,7 +8,7 @@ const connectDB = require("./database");
 
 const authRoutes = require("./routes/auth");
 const courseRoutes = require("./routes/courseRoutes");
-const paymentRoutes = require("./routes/paymentroutes");
+const paymentRoutes = require("./routes/PaymentRoutes");
 
 const app = express();
 
@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, "..")));
 // API Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/courses", courseRoutes);
-app.use("/api/payments", paymentroutes);
+app.use("/api/payments", paymentRoutes);
 
 // تشغيل السيرفر
 const PORT = process.env.PORT || 5000;
