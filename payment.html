@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>إتمام الدفع</title>
+
+    <link rel="stylesheet" href="payment.css">
+
+</head>
+
+<body>
+
+<div class="payment-box">
+
+    <h1>💳 إتمام عملية الدفع</h1>
+
+    <div class="info">
+
+        <h2 id="courseName"></h2>
+
+        <h3 id="price"></h3>
+
+    </div>
+
+    <div class="orange-box">
+
+        <h3>حول المبلغ على رقم Orange Cash</h3>
+
+        <h2 style="color:orange;">
+            0127719980
+        </h2>
+
+        <p>
+            بعد التحويل قم برفع Screenshot لإثبات الدفع.
+        </p>
+
+    </div>
+
+    <form id="paymentForm">
+
+        <input
+            type="file"
+            id="screenshot"
+            accept="image/*"
+            required>
+
+        <button type="submit">
+            إرسال طلب الدفع
+        </button>
+
+    </form>
+
+</div>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const course = params.get("course");
+const price = params.get("price");
+
+document.getElementById("courseName").innerHTML =
+"الكورس : " + course;
+
+document.getElementById("price").innerHTML =
+"السعر : " + price + " جنيه";
+
+</script>
+
+<script src="js/payment.js"></script>
+
+</body>
+
+</html>

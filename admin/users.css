@@ -1,0 +1,428 @@
+/* ===================================
+   Reset
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma,sans-serif;
+}
+
+body{
+
+    background:#f5f7fb;
+
+    color:#222;
+
+    padding:40px;
+
+}
+
+.container{
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+/* ===================================
+   Header
+=================================== */
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+header h1{
+
+    font-size:34px;
+
+    color:#111827;
+
+}
+
+.header-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:center;
+
+}
+
+.header-buttons input{
+
+    width:300px;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.header-buttons input:focus{
+
+    border-color:#f7c600;
+
+    box-shadow:0 0 10px rgba(247,198,0,.3);
+
+}
+
+.header-buttons button{
+
+    padding:14px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#f7c600;
+
+    color:#111;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.header-buttons button:hover{
+
+    background:#e0b000;
+
+}
+/* ===================================
+   Reset
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma,sans-serif;
+}
+
+body{
+
+    background:#f5f7fb;
+
+    color:#222;
+
+    padding:40px;
+
+}
+
+.container{
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+/* ===================================
+   Header
+=================================== */
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+header h1{
+
+    font-size:34px;
+
+    color:#111827;
+
+}
+
+.header-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:center;
+
+}
+
+.header-buttons input{
+
+    width:300px;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.header-buttons input:focus{
+
+    border-color:#f7c600;
+
+    box-shadow:0 0 10px rgba(247,198,0,.3);
+
+}
+
+.header-buttons button{
+
+    padding:14px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#f7c600;
+
+    color:#111;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.header-buttons button:hover{
+
+    background:#e0b000;
+
+}
+/* ===================================
+   Animation
+=================================== */
+
+table,
+header{
+
+    animation:fadeUp .7s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===================================
+   Scrollbar
+=================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#f7c600;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eee;
+
+}
+
+/* ===================================
+   Responsive
+=================================== */
+
+@media(max-width:992px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        align-items:flex-start;
+
+    }
+
+    .header-buttons{
+
+        width:100%;
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .header-buttons input{
+
+        width:100%;
+
+    }
+
+    .header-buttons button{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .container{
+
+        overflow-x:auto;
+
+    }
+
+    table{
+
+        min-width:900px;
+
+    }
+
+    header h1{
+
+        font-size:28px;
+
+    }
+
+    thead th,
+    tbody td{
+
+        font-size:14px;
+
+        padding:14px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    body{
+
+        padding:15px;
+
+    }
+
+    header h1{
+
+        font-size:24px;
+
+    }
+
+    .edit,
+    .delete{
+
+        display:block;
+
+        width:100%;
+
+        margin:6px 0;
+
+    }
+
+}
+
+/* ===================================
+   Hover Effects
+=================================== */
+
+.edit,
+.delete,
+.header-buttons button{
+
+    transition:.3s ease;
+
+}
+
+.edit:hover,
+.delete:hover,
+.header-buttons button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+tbody tr{
+
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    transform:scale(1.01);
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+}

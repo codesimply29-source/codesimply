@@ -1,0 +1,113 @@
+/* ===========================
+   Login Page
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Cairo", sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#2563eb,#38bdf8);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-container{
+    width:400px;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    text-align:center;
+}
+
+.login-container h2{
+    color:#2563eb;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+.login-container input{
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:2px solid #ddd;
+    border-radius:12px;
+    outline:none;
+    font-size:17px;
+    transition:.3s;
+}
+
+.login-container input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 10px rgba(37,99,235,.3);
+}
+
+.login-container button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-container button:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+.login-container button:active{
+    transform:scale(.98);
+}
+
+#message{
+    margin-top:20px;
+    font-size:15px;
+    color:red;
+}
+.register-link{
+    margin-top:20px;
+    color:#555;
+}
+
+.register-link a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.register-link a:hover{
+    text-decoration:underline;
+}
+#message{
+    margin-top:15px;
+    text-align:center;
+    font-weight:bold;
+    color:#e74c3c;
+}
+
+.links{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.links a{
+    text-decoration:none;
+    color:#3498db;
+    font-size:14px;
+}
+
+.links a:hover{
+    text-decoration:underline;
+}

@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma,sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#0d6efd;
+}
+
+.navbar h2{
+    color:#fff;
+}
+
+.navbar ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.navbar a{
+    color:#fff;
+    text-decoration:none;
+    font-size:17px;
+}
+
+/* الصفحة */
+
+.course-page{
+    display:flex;
+    gap:30px;
+    padding:40px;
+    align-items:flex-start;
+}
+
+/* الفيديو */
+
+.video-section{
+    flex:3;
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.video-section h1{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+.video-section p{
+    color:#666;
+    margin-bottom:20px;
+    line-height:1.8;
+}
+
+.video-section video{
+    width:85%;
+    max-width:900px;
+    height:450px;
+    object-fit:cover;
+    border-radius:15px;
+    margin:20px auto;
+    display:block;
+}
+
+/* أعلى الصفحة */
+
+.course-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.course-progress-text{
+    text-align:center;
+}
+
+.course-progress-text span{
+    display:block;
+    font-size:30px;
+    font-weight:bold;
+    color:#0d6efd;
+}
+
+/* معلومات الكورس */
+
+.course-info{
+    background:#f8f9fa;
+    padding:20px;
+    border-radius:15px;
+    text-align:right;
+}
+
+.course-info h2{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+/* شريط التقدم */
+
+.progress{
+    width:100%;
+    height:10px;
+    background:#ddd;
+    border-radius:30px;
+    overflow:hidden;
+    margin-top:20px;
+}
+
+.progress-bar{
+    width:0%;
+    height:100%;
+    background:#0d6efd;
+    transition:width .5s;
+}
+
+/* الأزرار */
+
+.video-buttons{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+}
+
+.video-buttons button{
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.video-buttons button:hover{
+    background:#084298;
+}
+
+/* قائمة الدروس */
+
+.playlist{
+    flex:1;
+    background:#fff;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    position:sticky;
+    top:20px;
+    max-height:85vh;
+    overflow-y:auto;
+}
+
+.playlist h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#0d6efd;
+}
+
+.lesson{
+    width:100%;
+    border:none;
+    padding:15px;
+    margin-bottom:12px;
+    border-radius:10px;
+    background:#f1f1f1;
+    cursor:pointer;
+    font-size:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:.3s;
+}
+
+.lesson:hover{
+    background:#0d6efd;
+    color:#fff;
+}
+
+.lesson.active{
+    background:#0d6efd;
+    color:#fff;
+    font-weight:bold;
+}
+
+.lesson.done{
+    background:#28a745;
+    color:#fff;
+}
+
+.lesson.done small{
+    color:#fff;
+}
+
+.lesson small{
+    color:#777;
+    font-size:13px;
+}
+
+/* Scroll */
+
+.playlist::-webkit-scrollbar{
+    width:8px;
+}
+
+.playlist::-webkit-scrollbar-thumb{
+    background:#0d6efd;
+    border-radius:20px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .course-page{
+        flex-direction:column;
+    }
+
+    .playlist{
+        width:100%;
+        position:static;
+        max-height:none;
+    }
+
+    .video-section video{
+        width:100%;
+        height:auto;
+    }
+
+    .course-top{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .video-buttons{
+        flex-direction:column;
+        gap:10px;
+    }
+
+}

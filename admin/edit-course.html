@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>تعديل كورس | CodeSimply</title>
+
+<link rel="stylesheet" href="admin/edit-course.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="form-box">
+
+<h1>
+
+<i class="fa-solid fa-pen-to-square"></i>
+
+تعديل كورس
+
+</h1>
+
+<form>
+
+<div class="row">
+
+<div class="input-group">
+
+<label>اختر الكورس</label>
+
+<select>
+
+<option>كورس HTML</option>
+
+<option>كورس CSS</option>
+
+<option>كورس JavaScript</option>
+
+<option>كورس Bootstrap</option>
+
+<option>كورس React</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>اسم الكورس</label>
+
+<input
+type="text"
+value="JavaScript">
+
+</div>
+
+</div>
+
+<div class="input-group">
+
+<label>وصف الكورس</label>
+
+<textarea rows="6">
+
+اكتب وصف الكورس هنا...
+
+</textarea>
+
+</div>
+
+<div class="row">
+
+<div class="input-group">
+
+<label>السعر</label>
+
+<input
+type="number"
+value="299">
+
+</div>
+
+<div class="input-group">
+
+<label>عدد الدروس</label>
+
+<input
+type="number"
+value="20">
+
+</div>
+
+</div>
+<div class="input-group">
+
+<label>صورة الكورس الحالية</label>
+
+<input type="file" accept="image/*">
+
+</div>
+
+<div class="input-group">
+
+<label>فيديو مقدمة الكورس</label>
+
+<input type="file" accept="video/*">
+
+</div>
+
+<div class="input-group">
+
+<label>رفع فيديوهات جديدة للدروس</label>
+
+<input type="file" multiple accept="video/*">
+
+</div>
+
+<div class="input-group">
+
+<label>ملفات إضافية (PDF - ZIP)</label>
+
+<input type="file" multiple accept=".pdf,.zip">
+
+</div>
+
+<div class="buttons">
+
+<button
+type="submit"
+class="save-btn">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+حفظ التعديلات
+
+</button>
+
+<button
+type="button"
+class="cancel-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+حذف الكورس
+
+</button>
+
+</div>
+</form>
+
+</div>
+
+</div>
+
+<script src="../js/edit-course.js"></script>
+
+</body>
+
+</html>

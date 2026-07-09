@@ -1,0 +1,443 @@
+/* ===================================
+   Reset
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma,sans-serif;
+}
+
+body{
+
+    background:#f5f7fb;
+
+    color:#222;
+
+    padding:40px;
+
+}
+
+.container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+/* ===================================
+   Header
+=================================== */
+
+header{
+
+    margin-bottom:35px;
+
+}
+
+header h1{
+
+    font-size:36px;
+
+    color:#111827;
+
+}
+
+header h1 i{
+
+    color:#f7c600;
+
+    margin-left:10px;
+
+}
+
+/* ===================================
+   Cards
+=================================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.card i{
+
+    font-size:42px;
+
+    color:#f7c600;
+
+    margin-bottom:18px;
+
+}
+
+.card h2{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+.card p{
+
+    color:#666;
+
+}
+/* ===================================
+   Statistics Table
+=================================== */
+
+.statistics-box{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-bottom:40px;
+
+}
+
+.statistics-box h2{
+
+    margin-bottom:25px;
+
+    color:#111827;
+
+    font-size:28px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#f7c600;
+
+}
+
+thead th{
+
+    padding:18px;
+
+    text-align:center;
+
+    color:#222;
+
+}
+
+tbody td{
+
+    padding:18px;
+
+    text-align:center;
+
+    border-bottom:1px solid #eee;
+
+}
+
+tbody tr{
+
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    background:#f8f9fa;
+
+}
+
+/* ===================================
+   Top Courses
+=================================== */
+
+.top-courses{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.top-courses h2{
+
+    margin-bottom:25px;
+
+    color:#111827;
+
+    font-size:28px;
+
+}
+
+.course-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+.course-card{
+
+    background:#f8f9fa;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    border-top:5px solid #f7c600;
+
+    transition:.3s;
+
+}
+
+.course-card:hover{
+
+    transform:translateY(-6px);
+
+    background:#fff8db;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.course-card h3{
+
+    color:#111827;
+
+    margin-bottom:10px;
+
+}
+
+.course-card p{
+
+    color:#666;
+
+}
+/* ===================================
+   Animation
+=================================== */
+
+.cards,
+.statistics-box,
+.top-courses{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===================================
+   Scrollbar
+=================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#f7c600;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eee;
+
+}
+
+/* ===================================
+   Responsive
+=================================== */
+
+@media(max-width:992px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    .cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    body{
+
+        padding:15px;
+
+    }
+
+    header h1{
+
+        font-size:28px;
+
+        text-align:center;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .course-list{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .statistics-box{
+
+        overflow-x:auto;
+
+    }
+
+    table{
+
+        min-width:700px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .card{
+
+        padding:20px;
+
+    }
+
+    .card h2{
+
+        font-size:24px;
+
+    }
+
+    .card i{
+
+        font-size:35px;
+
+    }
+
+    .statistics-box,
+    .top-courses{
+
+        padding:20px;
+
+    }
+
+}
+
+/* ===================================
+   Hover Effects
+=================================== */
+
+.card,
+.course-card{
+
+    transition:.3s ease;
+
+}
+
+.card:hover,
+.course-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+tbody tr{
+
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    transform:scale(1.01);
+
+}

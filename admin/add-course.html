@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>إضافة كورس | CodeSimply</title>
+
+    <link rel="stylesheet" href="admin/add-course.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="form-box">
+
+            <h1>
+
+                <i class="fa-solid fa-book"></i>
+
+                إضافة كورس جديد
+
+            </h1>
+
+            <form id="courseForm">
+
+                <div class="input-group">
+
+                    <label>اسم الكورس</label>
+
+                    <input  type="text" id="title" placeholder="مثال: كورس React.js">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>وصف الكورس</label>
+
+                    <textarea rows="6" id="description" placeholder="اكتب وصف الكورس..."></textarea>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label>السعر</label>
+
+                        <input  type="number" id="price" placeholder="299">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>التصنيف</label>
+
+                        <select id="category">
+
+                            <option>HTML</option>
+
+                            <option>CSS</option>
+
+                            <option>JavaScript</option>
+
+                            <option>React</option>
+
+                            <option>Node.js</option>
+
+                            <option>MongoDB</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label>عدد الدروس</label>
+
+                       <input type="number" id="lessonsCount" placeholder="20">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>مستوى الكورس</label>
+
+                        <select id="level">
+
+                            <option>مبتدئ</option>
+
+                            <option>متوسط</option>
+
+                            <option>متقدم</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label>مدة الكورس</label>
+
+                      <input type="text" id="duration" placeholder="10 ساعات">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>لغة الكورس</label>
+
+                        <select id="language">
+
+                            <option>العربية</option>
+
+                            <option>English</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>صورة الكورس</label>
+
+                    <input type="file" id="image" accept="image/*">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>فيديو مقدمة الكورس</label>
+
+                    <input type="file" id="introVideo" accept="video/*">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>رفع جميع فيديوهات الدروس</label>
+
+                    <input type="file" multiple accept="video/*">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>ملفات إضافية (PDF - ZIP)</label>
+
+                    <input type="file" multiple accept=".pdf,.zip">
+
+                </div>
+                
+
+                <div class="buttons">
+
+                    <button type="submit" class="save-btn">
+
+                        <i class="fa-solid fa-floppy-disk"></i>
+
+                        حفظ الكورس
+
+                    </button>
+              
+                    <button type="reset" class="cancel-btn">
+
+                        <i class="fa-solid fa-trash"></i>
+
+                        مسح البيانات
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="admin/add-course.js"></script>
+
+</body>
+
+</html>

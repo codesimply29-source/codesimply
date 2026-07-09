@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | CodeSimply</title>
+
+<link rel="stylesheet" href="admin/admin.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<h2>CodeSimply</h2>
+
+<p>لوحة الإدارة</p>
+
+</div>
+
+<ul>
+
+<li class="active">
+
+<a href="admin.html">
+
+<i class="fa-solid fa-house"></i>
+
+الرئيسية
+
+</a>
+
+</li>
+
+<li>
+
+<a href="statistics.html">
+
+<i class="fa-solid fa-chart-line"></i>
+
+الإحصائيات
+
+</a>
+
+</li>
+
+<li>
+
+<a href="users.html">
+
+<i class="fa-solid fa-users"></i>
+
+المستخدمون
+
+</a>
+
+</li>
+
+<li>
+
+<a href="payments.html">
+
+<i class="fa-solid fa-credit-card"></i>
+
+المدفوعات
+
+</a>
+
+</li>
+
+<li>
+
+<a href="add-course.html">
+
+<i class="fa-solid fa-plus"></i>
+
+إضافة كورس
+
+</a>
+
+</li>
+
+<li>
+
+<a href="edit-course.html">
+
+<i class="fa-solid fa-pen"></i>
+
+تعديل الكورسات
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<header>
+
+<h1>
+
+لوحة التحكم
+
+</h1>
+
+<div class="admin-info">
+
+<i class="fa-solid fa-user-shield"></i>
+
+<span>Admin</span>
+
+</div>
+
+</header>
+<!-- Statistics Cards -->
+
+<div class="cards">
+
+    <div class="card">
+
+        <div class="icon">
+            <i class="fa-solid fa-users"></i>
+        </div>
+
+        <div class="info">
+            <h3>1,245</h3>
+            <p>إجمالي المستخدمين</p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="icon">
+            <i class="fa-solid fa-book-open"></i>
+        </div>
+
+        <div class="info">
+            <h3>25</h3>
+            <p>عدد الكورسات</p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="icon">
+            <i class="fa-solid fa-money-bill-wave"></i>
+        </div>
+
+        <div class="info">
+            <h3>185,000 جنيه</h3>
+            <p>إجمالي الأرباح</p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+        <div class="info">
+            <h3>520</h3>
+            <p>عدد المبيعات</p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="icon">
+            <i class="fa-solid fa-video"></i>
+        </div>
+
+        <div class="info">
+            <h3>430</h3>
+            <p>عدد الفيديوهات</p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="icon">
+            <i class="fa-solid fa-star"></i>
+        </div>
+
+        <div class="info">
+            <h3>4.9</h3>
+            <p>متوسط التقييم</p>
+        </div>
+
+    </div>
+
+</div>
+<!-- ===========================
+     Tables
+=========================== -->
+
+<div class="dashboard-content">
+
+    <!-- آخر المستخدمين -->
+
+    <div class="table-box">
+
+        <div class="table-header">
+
+            <h2>آخر المستخدمين</h2>
+
+            <button>عرض الكل</button>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>الاسم</th>
+
+                    <th>البريد الإلكتروني</th>
+
+                    <th>الحالة</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>محمد أحمد</td>
+
+                    <td>mohamed@gmail.com</td>
+
+                    <td><span class="status active">نشط</span></td>
+
+                </tr>
+
+                <tr>
+
+                    <td>سارة علي</td>
+
+                    <td>sara@gmail.com</td>
+
+                    <td><span class="status active">نشط</span></td>
+
+                </tr>
+
+                <tr>
+
+                    <td>أحمد خالد</td>
+
+                    <td>ahmed@gmail.com</td>
+
+                    <td><span class="status inactive">موقوف</span></td>
+
+                </tr>
+
+                <tr>
+
+                    <td>مريم حسن</td>
+
+                    <td>mariam@gmail.com</td>
+
+                    <td><span class="status active">نشط</span></td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- آخر الكورسات -->
+
+    <div class="table-box">
+
+        <div class="table-header">
+
+            <h2>آخر الكورسات</h2>
+
+            <button>إدارة الكورسات</button>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>الكورس</th>
+
+                    <th>السعر</th>
+
+                    <th>الطلاب</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>HTML</td>
+
+                    <td>199 جنيه</td>
+
+                    <td>320</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>CSS</td>
+
+                    <td>249 جنيه</td>
+
+                    <td>290</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>JavaScript</td>
+
+                    <td>299 جنيه</td>
+
+                    <td>260</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Node.js</td>
+
+                    <td>399 جنيه</td>
+
+                    <td>140</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+<!-- ===========================
+     Quick Actions
+=========================== -->
+
+<div class="quick-actions">
+
+    <h2>إجراءات سريعة</h2>
+
+    <div class="action-buttons">
+
+        <a href="add-course.html" class="action-btn">
+            إضافة كورس جديد
+        </a>
+
+        <a href="users.html" class="action-btn">
+            إدارة المستخدمين
+        </a>
+
+        <a href="payments.html" class="action-btn">
+            مراجعة المدفوعات
+        </a>
+
+        <a href="statistics.html" class="action-btn">
+            عرض الإحصائيات
+        </a>
+
+        <a href="edit-course.html" class="action-btn">
+            تعديل الكورسات
+        </a>
+
+        <a href="../client/index.html" class="action-btn">
+            فتح الموقع
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+     Footer
+=========================== -->
+
+<footer class="admin-footer">
+
+    <p>
+
+        جميع الحقوق محفوظة © 2026 CodeSimply Admin Dashboard
+
+    </p>
+
+</footer>
+
+</div>
+<!-- نهاية Main -->
+
+</div>
+<!-- نهاية Dashboard -->
+
+</body>
+
+</html>

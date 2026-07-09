@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كورس JavaScript | CodeSimply</title>
+
+    <link rel="stylesheet" href="css/course-javascript.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>codesimply</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="courses.html">الكورسات</a></li>
+            <li><a href="profile.html">حسابي</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Course Container -->
+
+    <section class="course-container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <button id="finishLesson" class="finish-btn">
+                ✔ إنهاء الدرس
+            </button>
+
+            <div class="course-name">
+                <h3>JavaScript</h3>
+                <span>20 درس</span>
+            </div>
+
+            <h2>دروس الكورس</h2>
+
+            <ul id="lessonList">
+
+                <li class="lesson active">1. مقدمة في JavaScript - 15 دقيقة</li>
+                <li class="lesson">2. ربط JavaScript مع HTML - 18 دقيقة</li>
+                <li class="lesson">3. المتغيرات Variables - 20 دقيقة</li>
+                <li class="lesson">4. أنواع البيانات Data Types - 18 دقيقة</li>
+                <li class="lesson">5. العمليات Operators - 18 دقيقة</li>
+                <li class="lesson">6. الشروط If Else - 20 دقيقة</li>
+                <li class="lesson">7. Switch - 18 دقيقة</li>
+                <li class="lesson">8. Loops - 20 دقيقة</li>
+                <li class="lesson">9. Functions - 20 دقيقة</li>
+                <li class="lesson">10. Arrays - 20 دقيقة</li>
+                <li class="lesson">11. Objects - 20 دقيقة</li>
+                <li class="lesson">12. DOM Basics - 20 دقيقة</li>
+                <li class="lesson">13. Events - 18 دقيقة</li>
+                <li class="lesson">14. DOM Manipulation - 20 دقيقة</li>
+                <li class="lesson">15. ES6 - 20 دقيقة</li>
+                <li class="lesson">16. Arrow Functions - 18 دقيقة</li>
+                <li class="lesson">17. Async & Await - 20 دقيقة</li>
+                <li class="lesson">18. Fetch API - 20 دقيقة</li>
+                <li class="lesson">19. مشروع JavaScript - 20 دقيقة</li>
+                <li class="lesson">20. مراجعة الكورس - 15 دقيقة</li>
+
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="video-section">
+
+            <div class="course-card">
+
+                <h1>كورس JavaScript كامل للمبتدئين</h1>
+
+
+
+                <video id="courseVideo" controls poster="/images/javascript.png">
+
+                    <source src="videos/javascript/lesson1.mp4" type="video/mp4">
+
+                    متصفحك لا يدعم تشغيل الفيديو.
+
+                </video>
+
+                <div class="video-buttons">
+
+                    <button id="prevBtn">
+                        الدرس السابق
+                    </button>
+
+                    <button id="nextBtn">
+                        الدرس التالي
+                    </button>
+
+                </div>
+
+                <div class="progress">
+
+                    <div id="progressBar" class="progress-bar"></div>
+
+                </div>
+
+                <div id="progressText" class="progress-text">
+
+                    نسبة الإنجاز 0%
+
+                </div>
+
+                <div class="lesson-info">
+
+                    <h2 id="lessonTitle">
+                        مقدمة في JavaScript
+                    </h2>
+
+                    <p id="lessonDescription">
+
+                        سنتعرف في هذا الدرس على لغة JavaScript وكيفية استخدامها لإضافة التفاعل إلى صفحات الويب.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </section>
+
+    <script src="js/course-javascript.js"></script>
+
+</body>
+
+</html>
