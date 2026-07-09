@@ -36,7 +36,7 @@ app.use("/api/payments", PaymentRoutes);
 // تشغيل السيرفر
 const PORT = process.env.PORT || 5000;
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "../index.html"));
+    res.send("Home Works");
 });
 app.listen(PORT, () => {
     console.log(`✅ Server Running On Port ${PORT}`);
