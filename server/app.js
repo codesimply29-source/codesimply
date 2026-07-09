@@ -8,7 +8,7 @@ const connectDB = require("./database");
 
 const authRoutes = require("./routes/auth");
 const courseRoutes = require("./routes/courseRoutes");
-const paymentRoutes = require("./routes/PaymentRoutes");
+const PaymentRoutes = require("./routes/PaymentRoutes");
 
 const app = express();
 
